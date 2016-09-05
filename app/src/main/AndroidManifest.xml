@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Clients">
-            </activity>
+        </activity>
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login">
@@ -27,6 +27,18 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".ClientList">
+        </activity>
+        <activity android:name=".BillingInfo">
+        </activity>
+        <activity android:name=".Receipt">
+        </activity>
+        <activity android:name=".AddSession">
+        </activity>
+        <activity android:name=".SessionList">
+        </activity>
+        <activity android:name=".Signature">
         </activity>
     </application>
 

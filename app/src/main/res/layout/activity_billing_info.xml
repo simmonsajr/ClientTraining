@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="wrap_content">
+              android:layout_height="match_parent">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                   android:layout_width="match_parent"
@@ -37,9 +39,17 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
     </LinearLayout>
 
@@ -49,46 +59,38 @@
         android:inputType="textPersonName"
         android:text="Name"
         android:ems="10"
-        android:id="@+id/editNameUS2"/>
+        android:id="@+id/editText3"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPostalAddress"
-        android:ems="10"
-        android:id="@+id/editAddressUS2"
-        android:text="Address"/>
+        android:id="@+id/editText4"
+        android:text="Street "/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:ems="10"
-        android:id="@+id/editPhoneUS2"
-        android:text="Phone"/>
+        android:id="@+id/editText5"
+        android:text="City:"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/editEmailUS2"
-        android:text="Email"/>
+        android:id="@+id/editText6"
+        android:text="State:"/>
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:touchscreenBlocksFocus="true">
+        android:id="@+id/editText7"
+        android:singleLine="true"
+        android:text="Zip:"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/editDOB_US2"
-            android:text="DOB"/>
-
-    </LinearLayout>
-
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText8"
+        android:text="Credit Card:"/>
 
 
     <LinearLayout
@@ -100,12 +102,17 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editDateAddedUS2"
-            android:text=" Height                  Weight"
+            android:id="@+id/editExpDateUS4"
+            android:text="Expiration Date:"
             android:inputType="date"/>
 
     </LinearLayout>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText9"
+        android:text="Security Code:"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -116,7 +123,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Submit"
-            android:id="@+id/buttonSaveUS2"
+            android:id="@+id/buttonSaveUS4"
             android:layout_gravity="center_horizontal"/>
 
     </LinearLayout>
@@ -125,7 +132,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cancel"
-        android:id="@+id/buttonCancelUS2"/>
+        android:id="@+id/buttonCancelUS4"/>
 
 
 </LinearLayout>

@@ -3,7 +3,7 @@
               xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="wrap_content">
+              android:layout_height="match_parent">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                   android:layout_width="match_parent"
@@ -37,9 +37,17 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
     </LinearLayout>
 
@@ -49,62 +57,26 @@
         android:inputType="textPersonName"
         android:text="Name"
         android:ems="10"
-        android:id="@+id/editNameUS2"/>
+        android:id="@+id/editFullNameUS7"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPostalAddress"
-        android:ems="10"
-        android:id="@+id/editAddressUS2"
-        android:text="Address"/>
+        android:id="@+id/editPaymentUS7"
+        android:autoText="true"
+        android:text="Amount"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:ems="10"
-        android:id="@+id/editPhoneUS2"
-        android:text="Phone"/>
+        android:id="@+id/editDatePaidUS7"
+        android:text="Date"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/editEmailUS2"
-        android:text="Email"/>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:touchscreenBlocksFocus="true">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/editDOB_US2"
-            android:text="DOB"/>
-
-    </LinearLayout>
-
-
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/editDateAddedUS2"
-            android:text=" Height                  Weight"
-            android:inputType="date"/>
-
-    </LinearLayout>
+        android:id="@+id/editLastFourDigitsUS7"
+        android:text="Last 4 Digits of Credit Card"/>
 
 
     <LinearLayout
@@ -115,8 +87,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Submit"
-            android:id="@+id/buttonSaveUS2"
+            android:text="Save"
+            android:id="@+id/buttonSaveUS7"
             android:layout_gravity="center_horizontal"/>
 
     </LinearLayout>
@@ -124,8 +96,14 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cancel"
-        android:id="@+id/buttonCancelUS2"/>
+        android:text="Email"
+        android:id="@+id/buttonEmailUS7"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Print"
+        android:id="@+id/buttonPrintUS7"/>
 
 
 </LinearLayout>
